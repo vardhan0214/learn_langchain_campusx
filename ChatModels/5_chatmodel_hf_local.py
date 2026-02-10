@@ -3,7 +3,7 @@ import os
 from langchain_core.messages import HumanMessage
 
 llm = HuggingFacePipeline.from_model_id(
-    model_id='Qwen/Qwen3-0.6B',
+    model_id='meta-llama/Llama-3.1-8B-Instruct',
     task='text-generation',
     pipeline_kwargs = dict(
         temperature=0.5,
