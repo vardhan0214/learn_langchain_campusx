@@ -17,7 +17,7 @@ template = PromptTemplate(
 # result = model.invoke(prompt)
 
 # final_result = parser.parse(result.content)
-
+    
 chain = template | model | parser 
 
 result = chain.invoke({})
